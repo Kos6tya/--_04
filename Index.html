@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+
+<body>
+<div style=" display: flex; justify-content: center;">
+    <form name="form4" action="script/registration.php" method="post" >
+     <h1 style="text-align: center; color: blue;">Анкета відвідувача реторана</h1>
+     <fieldset style="background-color: rgb(225, 219, 149);">
+        <legend style="color: rgb(0, 255, 170);" >Контактна інформація</legend>
+        <table border="0">
+            <tr>
+                <td style="color: blue;">Ім'я</td>
+                <td><input type="text" name="ResName" placeholder="Ваше ім'я?"></td>
+            </tr>
+            <tr>
+                <td style="color: blue;">Телефон</td>
+                <td><input type="text" name="ResTel" maxlength="10" placeholder="Номер телефону?"></td>
+            </tr>
+            <tr>
+                <td style="color: blue;">Email</td>
+                <td><input type="text" name="ResEmail" placeholder="Адреса вашої електроною майже?"></td>
+            </tr>
+            <tr>
+                <td style="color: blue;">Дата відвідування</td>
+                <td><input type="date" name="ResDate"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset style="background-color: rgb(225, 219, 149);">
+        <legend style="color: rgb(0, 255, 170);" >Персональна інформація</legend>
+        <table border="0" width="90%">
+            <tr>
+                <td style="color: blue;">Вік</td>
+                <td><input type="text" name="ResAge"  maxlength="3"></td>
+            </tr>
+            <tr>
+                <td style="color: blue;">Улюблена кухня</td>
+                <td><select name="ResKitchen">
+                    <option value="5">Українська</option>
+                    <option value="4">Російська</option>
+                    <option value="3">В'єтнамська</option>
+                    <option value="2">Японська</option>
+                    <option value="1">Корейська</option>
+                    </select>
+            </tr>
+            <tr>
+                <td style="color: blue;">Які страви Ви хотіли б побачити у меню</td>
+                <td><textarea name="ResDishes" rows="5" cols="30"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset style="background-color: rgb(225, 219, 149);">
+        <legend style="color: rgb(0, 255, 170);" >Оцінка нашого закладу</legend>
+        <table border="0">
+            <th align="left" style="color: blue;">Чому ви вибрали наш заклад?</th>
+            <tr>
+                <td>
+                <ul style="list-style: none; color: blue;">
+                   <li><input type="radio" name="Why" value="Неподалік будинку/роботи">Неподалік будинку/роботи</li> 
+                    <li><input type="radio" name="Why" value="Побачив рекламу">Побачив рекламу</li> 
+                    <li><input type="radio" name="Why" value="Порадили">Порадили</li> 
+                    <li><input type="radio" name="Why" value="Оптимальне співвідношення ціни та якості">Оптимальне співвідношення ціни та якості</li> 
+                </ul>
+                </td>
+            </tr>
+            <th align="left" style="color: blue;">Ви будете рекомендувати наш заклад своїм знайомим?</th>
+            <tr>
+                <td>
+                <ul style="list-style: none; color: blue;">
+                   <li><input type="radio" name="Yes-NO" value="Да">Так</li> 
+                    <li><input type="radio" name="Yes-NO" value="Нет">Ні</li> 
+                </ul>
+                </td>
+            </tr>    
+        </table>
+    </fieldset>
+    <input style="text-align: left;" type="submit" name="btn6" value="Відправити">
+    </form>
+</div>
+    <form name="form1" action="script/request.php" method="post">
+        <table border="0" cellpadding="10" bgcolor="PowderBlue">
+            <tr height="5" bgcolor="DeepSkyBlue">
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>Ім'я</td>
+                <td><input type="text" name="ed1"></td>
+            </tr>
+            <tr>
+                <td>Прізвище</td>
+                <td><input type="text" name="ed2"></td>
+            </tr>
+            <tr>
+                <td>По-батькові</td>
+                <td><input type="text" name="ed3"></td>
+            </tr>
+            <tr>
+                <td>Телефон</td>
+                <td><input type="text" name="ed4"></td>
+            </tr>
+            <tr>
+                <td>Адреса</td>
+                <td><input type="text" name="ed5"></td>
+            </tr>
+            <tr height="5" bgcolor="DeepSkyBlue">
+                <td colspan="2"></td>
+            </tr>
+<tr>
+    <td colspan="2" align="center">
+<input type="reset" name="btn1" value="Скинути">
+<input type="submit" name="btn2" value="Відправити">
+    </td>
+</tr>
+<tr height="5" bgcolor="DeepSkyBlue">
+    <td colspan="2"></td>
+</tr>
+        </table>
+    </form>
+    <form name="form3" action="script/request.php" method="post" style="margin-top: 10px;">
+        <table border="0" cellpadding="10" bgcolor="00ff99">
+            <tr height="5" bgcolor="009933">
+                <td colspan="2" align="center"><h2>Професійні дані</h2></td>
+            </tr>
+            <th align="left">1.Освіта</th>
+            <tr>
+                <td>
+                <ul style="list-style: none;">
+                   <li><input type="radio" name="education" value="Середнє">Середнє</li> 
+                    <li><input type="radio" name="education" value="Середнє спеціальне">Середнє спеціальне</li> 
+                    <li><input type="radio" name="education" value="Незакінчена вища">Незакінчена вища</li> 
+                    <li><input type="radio" name="education" value="Вища">Вища</li> 
+                </ul>
+                </td>
+            </tr>
+            <th align="left">2.Досвід роботи</th>
+            <tr>
+                <td><textarea name="experience" rows="4" cols="80" placeholder="Вкажіть, закладення та тривалість вашої роботи"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table border="1" width="5%">
+                        <th>3.Мови програмування</th>
+                        <tr>
+                            <td><input type="checkbox" name="programming_languages[]" value="Fortran"></td>
+                            <td>Fortran</td>                       
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="programming_languages[]" value="VBasic"></td>
+                            <td>VBasic</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="programming_languages[]" value="C++"></td>
+                            <td>C++</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="programming_languages[]" value="Java"></td>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="programming_languages[]" value="Pascal"></td>
+                            <td>Pascal</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="programming_languages[]" value="Ada"></td>
+                            <td>Ada</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table border="1" width="5%">
+                        <th>4.Іноземна мова</th>
+                        <tr>
+                            <td><input type="checkbox" name="foreign_languages[]" value="Англійська"></td>
+                            <td>Англійська</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="foreign_languages[]" value="Французька"></td>
+                            <td>Французский</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="foreign_languages[]" value="Німецька"></td>
+                            <td>Німецька</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="foreign_languages[]" value="Іспанська"></td>
+                            <td>Іспанська</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <th align="left">5.Хоббі, додаткова інформація</th>
+            <tr>
+                <td><textarea name="hobbies" rows="3" cols="80" placeholder="Ваше хоббі"></textarea></td>
+            </tr>
+            <tr height="5" bgcolor="009933">
+                <td colspan="2"></td>
+            </tr>
+<tr>
+    <td colspan="2" align="center">
+<input type="reset" name="btn4" value="Скинути">
+<input type="submit" name="btn5" value="Відправити">
+    </td>
+</tr>
+<tr height="5" bgcolor="009933">
+    <td colspan="2"></td>
+</tr>
+        </table>
+    </form>
+    <form name="form2" action="script/registration.php" method="post" style=" margin: 0;padding: 0;display: flex;justify-content: flex-end;align-items: flex-end;height: 100vh;">
+        <table border="0" cellpadding="10" bgcolor="LightYellow">
+            <tr height="5" bgcolor="DarkOrange">
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td>Логін</td>
+                <td><input type="text" name="ed1" value="Ваш логін"></td>
+            </tr>
+            <tr>
+                <td>Пароль</td>
+                <td><input type="password" name="pass" maxlength="10" value="Введіть пароль"></td>
+            </tr>
+            <tr height="5" bgcolor="DarkOrange">
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="btn3" value="Реєстрація">
+                </td>
+            </tr>
+            <tr height="5" bgcolor="DarkOrange">
+                <td colspan="2"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
